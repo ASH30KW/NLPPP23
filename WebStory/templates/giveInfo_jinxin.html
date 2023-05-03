@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>NLPPP23</title>
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700' rel='stylesheet'
+		type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+	<div id="fh5co-page">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+
+			<h1 id="fh5co-logo"><a href="home"><img src="static/images/mylogo.png"
+						alt="Free HTML5 Bootstrap Website Template" width="30%"></a></h1>
+			<nav id="fh5co-main-menu" role="navigation">
+				<ul>
+					<li class="fh5co-active"><a href="home">Home</a></li>
+					<li><a href="giveInfo_jinxin">Give Information</a></li>
+					<li><a href="webstory_jinxin">Web Story</a></li>
+				</ul>
+			</nav>
+
+		</aside>
+
+		<div id="fh5co-main">
+			<div class="fh5co-testimonial">
+				<div class="fh5co-narrow-content">
+					<div class="owl-carousel-fullwidth animate-box" data-animate-effect="fadeInLeft">
+						<table>
+							<tr>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>1.</td>
+								<td>Give a topic/text for web story.</td>
+								<td><input type="text" id="topic_text"></td>
+								<td><button onclick="topic2story()">Submit</button><br>
+								</td>
+							</tr>
+							<td>2.</td>
+							<td>Generate Images. </td>
+							<td></td>
+							<td><button onclick="generate4imgs()">Submit</button><br></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		function topic2story() {
+			var text = $('#topic_text').val();
+			$.ajax({
+				url: "/topic",
+				type: "POST",
+				data: { text: text }
+
+			}).done(function (response) {
+				alert(response)
+			});
+		};
+		function generate4imgs() {
+			var text = $('#generate4imgs_text').val();
+			$.ajax({
+				url: "/generate4imgs",
+				type: "POST",
+				data: { text: text }
+			}).done(function (response) {
+				alert(response)
+			});
+		};
+	</script>
+</body>
+
+</html>

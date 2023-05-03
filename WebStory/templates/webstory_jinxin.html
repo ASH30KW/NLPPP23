@@ -1,0 +1,458 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	<title>Web Story</title>
+	<link rel="icon" href="static/webstory_jinxin/imgs/favicon.png" type="image/png">
+	<link href="static/webstory_jinxin/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link href="static/webstory_jinxin/css/style.css" rel="stylesheet" type="text/css">
+	<link href="static/webstory_jinxin/css/animate.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<section id="hero_section" class="top_cont_outer">
+		<div class="hero_wrapper">
+			<div class="container">
+				<div class="hero_section">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="top_left_cont zoomIn wow animated">
+								<h2>Web story<br> <strong id="bigTitle"></strong></h2>
+								<h3>Date&Time: <span id="datetime"></span></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<header id="header_wrapper">
+		<div class="container">
+			<div class="header_box">
+				<div class="logo"><a href="#"><img src="static/webstory_jinxin/imgs/output_0.png" alt="logo"></a></div>
+				<nav class="navbar navbar-inverse" role="navigation">
+					<div class="navbar-header">
+						<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse"
+							data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="main-nav" class="collapse navbar-collapse navStyle">
+						<ul class="nav navbar-nav" id="mainNav">
+							<li class="active"><a href="#hero_section" class="scroll-link">Home</a></li>
+							<li><a href="#sectionOne" class="scroll-link">Section one & two</a></li>
+							<li><a href="#sectionTwo" class="scroll-link">Section three & four</a></li>
+							<li><a href="#sectionThree" class="scroll-link">Section five & six</a></li>
+							<li><a href="#contact" class="scroll-link">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section id="sectionOne">
+		<div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+			<div class="container">
+				<h2 id="section1Title"></h2>
+				<div class="inner_section">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="slideshow-container">
+								<div class="mySlides1">
+									<div class="numbertext">1 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_0.png" style="width:90%">
+									<div class="text">one</div>
+								</div>
+
+								<div class="mySlides1">
+									<div class="numbertext">2 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_1.png" style="width:90%">
+									<div class="text">Two</div>
+								</div>
+
+								<div class="mySlides1">
+									<div class="numbertext">3 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_2.png" style="width:90%">
+									<div class="text">Three</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1,0)"></span>
+								<span class="dot" onclick="currentSlide(2,0)"></span>
+								<span class="dot" onclick="currentSlide(3,0)"></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h3 id="section1_1Title"></h3>
+							<P id="section1_1"></P>
+							<p>
+								<script type="static/webstory_jinxin/txt" src="section1.json"></script>
+							</p>
+							<h4>Summary</h4>
+							<ul class="about-us-list" id="section1Summary">
+							</ul>
+						</div>
+					</div>
+					<div class="row mrgTop30">
+
+						<div class="col-md-6">
+							<h3 id="section1_2Title">Groom’s story</h3>
+							<P id="section1_2"></P>
+							<h4>Summary</h4>
+							<ul class="about-us-list" id="section2Summary">
+						</div>
+						<div class="col-md-6">
+							<div class="slideshow-container">
+								<div class="mySlides2">
+									<div class="numbertext">1 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_3.png" style="width:90%">
+									<div class="text">One</div>
+								</div>
+
+								<div class="mySlides2">
+									<div class="numbertext">2 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_4.png" style="width:90%">
+									<div class="text">Two</div>
+								</div>
+
+								<div class="mySlides2">
+									<div class="numbertext">3 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_5.png" style="width:90%">
+									<div class="text">Three</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1,1)"></span>
+								<span class="dot" onclick="currentSlide(2,1)"></span>
+								<span class="dot" onclick="currentSlide(3,1)"></span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sectionTwo">
+		<div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+			<div class="container">
+				<h2 id="section2Title">
+				</h2>
+				<div class="inner_section">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="slideshow-container">
+								<div class="mySlides3">
+									<div class="numbertext">1 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_6.png" style="width:90%">
+									<div class="text">One</div>
+								</div>
+
+								<div class="mySlides3">
+									<div class="numbertext">2 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_7.png" style="width:90%">
+									<div class="text">Two</div>
+								</div>
+
+								<div class="mySlides3">
+									<div class="numbertext">3 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_8.png" style="width:90%">
+									<div class="text">Three</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1,2)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1,2)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1,2)"></span>
+								<span class="dot" onclick="currentSlide(2,2)"></span>
+								<span class="dot" onclick="currentSlide(3,2)"></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h3 id="section2_1Title"></h3>
+							<P id="section2_1"></P>
+							<h4>Summary</h4>
+							<ul class="about-us-list" id="section3Summary">
+						</div>
+					</div>
+					<div class="row mrgTop30">
+
+						<div class="col-md-6">
+							<h3 id="section2_2Title">Groom’s story</h3>
+							<P id="section2_2"></P>
+							<h4>Summary</h4>
+							<ul class="about-us-list" id="section4Summary">
+						</div>
+						<div class="col-md-6">
+							<div class="slideshow-container">
+								<div class="mySlides4">
+									<div class="numbertext">1 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_9.png" style="width:90%">
+									<div class="text">One</div>
+								</div>
+
+								<div class="mySlides4">
+									<div class="numbertext">2 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_10.png" style="width:90%">
+									<div class="text">Two</div>
+								</div>
+
+								<div class="mySlides4">
+									<div class="numbertext">3 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_11.png" style="width:90%">
+									<div class="text">Three</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1,3)"></span>
+								<span class="dot" onclick="currentSlide(2,3)"></span>
+								<span class="dot" onclick="currentSlide(3,3)"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sectionThree">
+		<div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
+			<div class="container">
+				<h2 id="section3Title">
+				</h2>
+
+				<div class="inner_section">
+					<div class="row">
+						<div class="col-md-6">
+							<!-- <img class="img-responsive" src="static/webstory_jinxin/imgs/output_4.png" align=""> -->
+							<div class="slideshow-container">
+								<div class="mySlides5">
+									<div class="numbertext">1 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_12.png" style="width:90%">
+									<div class="text">One</div>
+								</div>
+
+								<div class="mySlides5">
+									<div class="numbertext">2 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_13.png" style="width:90%">
+									<div class="text">Two</div>
+								</div>
+
+								<div class="mySlides5">
+									<div class="numbertext">3 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_14.png" style="width:90%">
+									<div class="text">Three</div>
+								</div>
+
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+							</div>
+							<br>
+
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1,4)"></span>
+								<span class="dot" onclick="currentSlide(2,4)"></span>
+								<span class="dot" onclick="currentSlide(3,4)"></span>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<h3 id="section3_1Title"></h3>
+							<P id="section3_1"></P>
+							<h4>Summary</h4>
+							<ul class="about-us-list" id="section5Summary">
+						</div>
+					</div>
+					<div class="row mrgTop30">
+
+						<div class="col-md-6">
+							<h3 id="section3_2Title"></h3>
+							<P id="section3_2"></P>
+							<h4>Summary</h4>
+							<ul class="about-us-list" id="section6Summary">
+						</div>
+						<div class="col-md-6">
+							<div class="slideshow-container">
+								<div class="mySlides6">
+									<div class="numbertext">1 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_15.png" style="width:90%">
+									<div class="text">One</div>
+								</div>
+								<div class="mySlides6">
+									<div class="numbertext">2 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_16.png" style="width:90%">
+									<div class="text">Two</div>
+								</div>
+								<div class="mySlides6">
+									<div class="numbertext">3 / 3</div>
+									<img src="static/webstory_jinxin/imgs/output_17.png" style="width:90%">
+									<div class="text">Three</div>
+								</div>
+								<a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1,5)"></span>
+								<span class="dot" onclick="currentSlide(2,5)"></span>
+								<span class="dot" onclick="currentSlide(3,5)"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>
+		showSections()
+		function showSections() {
+			var text = ""
+			$.ajax({
+				url: "/showSections",
+				type: "POST",
+				data: { text: text }
+			}).done(function (response) {
+				document.getElementById("section1_1Title").innerHTML = response.result[0].section_heading
+				document.getElementById("section1_1").innerHTML = response.result[0].section_content
+				var ul1 = document.getElementById("section1Summary");
+				var li1 = document.createElement("li");
+
+				for (var i = 0; i < response.result[0].summary_sentences.length; i++) {
+					if (response.result[0].summary_sentences[i] != "") {
+						ul1.innerHTML += "<li>" + response.result[0].summary_sentences[i] + "</li>";
+					}
+				}
+				var ul2 = document.getElementById("section2Summary");
+				var li2 = document.createElement("li");
+				document.getElementById("section1_2Title").innerHTML = response.result[1].section_heading
+				document.getElementById("section1_2").innerHTML = response.result[1].section_content
+
+				for (var i = 0; i < response.result[1].summary_sentences.length; i++) {
+					if (response.result[1].summary_sentences[i] != "") {
+						ul2.innerHTML += "<li>" + response.result[1].summary_sentences[i] + "</li>";
+					}
+				}
+
+				var ul3 = document.getElementById("section3Summary");
+				var li3 = document.createElement("li");
+				document.getElementById("section2_1Title").innerHTML = response.result[2].section_heading
+				document.getElementById("section2_1").innerHTML = response.result[2].section_content
+				for (var i = 0; i < response.result[2].summary_sentences.length; i++) {
+					if (response.result[2].summary_sentences[i] != "") {
+						ul3.innerHTML += "<li>" + response.result[2].summary_sentences[i] + "</li>";
+					}
+				}
+
+				var ul4 = document.getElementById("section4Summary");
+				var li4 = document.createElement("li");
+				document.getElementById("section2_2Title").innerHTML = response.result[3].section_heading
+				document.getElementById("section2_2").innerHTML = response.result[3].section_content
+				for (var i = 0; i < response.result[3].summary_sentences.length; i++) {
+					if (response.result[3].summary_sentences[i] != "") {
+						ul4.innerHTML += "<li>" + response.result[3].summary_sentences[i] + "</li>";
+					}
+				}
+
+				var ul5 = document.getElementById("section5Summary");
+				var li5 = document.createElement("li");
+				document.getElementById("section3_1Title").innerHTML = response.result[4].section_heading
+				document.getElementById("section3_1").innerHTML = response.result[4].section_content
+				for (var i = 0; i < response.result[4].summary_sentences.length; i++) {
+					if (response.result[4].summary_sentences[i] != "") {
+						ul5.innerHTML += "<li>" + response.result[4].summary_sentences[i] + "</li>";
+					}
+				}
+
+				var ul6 = document.getElementById("section6Summary");
+				var li6 = document.createElement("li");
+				document.getElementById("section3_2Title").innerHTML = response.result[5].section_heading
+				document.getElementById("section3_2").innerHTML = response.result[5].section_content
+				for (var i = 0; i < response.result[5].summary_sentences.length; i++) {
+					if (response.result[5].summary_sentences[i] != "") {
+						ul6.innerHTML += "<li>" + response.result[5].summary_sentences[i] + "</li>";
+					}
+				}
+
+			});
+		};
+	</script>
+	<script>
+		setInterval(function () {
+			const today = new Date();
+			const yyyy = today.getFullYear();
+			let mm = today.getMonth() + 1;
+			let dd = today.getDate();
+			let hour = today.getHours()
+			let minute = today.getMinutes()
+			let sencond = today.getSeconds()
+			if (dd < 10) dd = '0' + dd;
+			if (mm < 10) mm = '0' + mm;
+			const formattedToday = dd + '/' + mm + '/' + yyyy + ' ' + hour + ':' + minute + ':' + sencond;
+			document.getElementById("datetime").innerHTML = formattedToday;
+		}, 1000);
+	</script>
+	<script>
+		let slideIndex = [1, 1, 1, 1, 1, 1];
+		let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"]
+		showSlides(1, 0);
+		showSlides(1, 1);
+		showSlides(1, 2);
+		showSlides(1, 3);
+		showSlides(1, 4);
+		showSlides(1, 5);
+		function currentSlide(n, no) {
+			showSlides(slideIndex[no] = n, no);
+		}
+		function plusSlides(n, no) {
+			showSlides(slideIndex[no] += n, no);
+		}
+
+		function showSlides(n, no) {
+			let i;
+			let x = document.getElementsByClassName(slideId[no]);
+			if (n > x.length) { slideIndex[no] = 1 }
+			if (n < 1) { slideIndex[no] = x.length }
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex[no] - 1].style.display = "block";
+		}
+	</script>
+
+	<script>
+		showTitle()
+		function showTitle() {
+			var text = $('#generate4arch_text').val();
+			$.ajax({
+				url: "/showTitle",
+				type: "POST",
+				data: { text: text }
+			}).done(function (response) {
+				document.getElementById('section1Title').innerHTML = response.result
+				document.getElementById('bigTitle').innerHTML = response.result
+			});
+		};
+	</script>
+	<footer class="footer_wrapper" id="contact">
+		<div class="footer_bottom">
+			<span>Copyright © 2023, Created by Jinxin Ai. Email: ash30kw@icloud.com</span>
+		</div>
+	</footer>
+</body>
+
+</html>

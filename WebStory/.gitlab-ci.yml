@@ -1,0 +1,16 @@
+stages:
+  - build
+  - test
+
+build:
+  stage: build
+  image: python:3.8
+  script:
+    - pip install -r requirements.txt
+    - python setup.py build
+
+test:
+  stage: test
+  image: python:3.8
+  script:
+    - python setup.py test

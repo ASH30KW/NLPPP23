@@ -1,0 +1,395 @@
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover,
+a:active {
+  outline: 0px !important;
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #888888;
+  margin: 0;
+}
+
+h2 {
+  font-size: 38px;
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  margin: 0px 0 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #222222;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+h6 {
+  font-size: 16px;
+  color: #888888;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+p {
+  line-height: 24px;
+  margin: 0;
+}
+
+#header_wrapper {
+  background: gray;
+  padding: 20px 0px;
+
+  border-top: 4px solid #ffffff;
+  box-shadow: 1px 1px 4px rgba(60, 60, 60, 0.44);
+}
+
+.header_box {
+  position: relative;
+}
+
+.logo {
+  float: left;
+  margin-top: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+div#main-nav {
+  float: left;
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar {
+  border: 0px solid #fff;
+  min-height: 40px;
+  margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: lemonchiffon;
+}
+
+.navStyle {
+  float: right;
+}
+
+.navStyle ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.navStyle ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.navStyle ul li:first-child {
+  /*margin:0px;*/
+}
+
+.navStyle ul li:last-child {
+  margin: 0 0 0 23px;
+}
+
+.navStyle ul li a {
+  display: block;
+  font-size: 14px;
+  color: #222222;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  border-radius: 0;
+  background: transparent;
+}
+.logo {
+  display: none;
+}
+
+.top_cont_outer {
+  background: lightgreen;
+  position: relative;
+  background: url("../imgs/background.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.hero_section {
+  position: relative;
+  padding-top: 14px;
+}
+.hero_wrapper {
+  height: 750px;
+}
+
+.top_left_cont {
+  padding: 245px 0;
+}
+
+.top_left_cont h3 {
+  font-size: 25px;
+  color: gray;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-weight: 700;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  /* display: inline-block; */
+  /* margin: 0 auto; */
+  /* float: none; */
+  /* clear: both; */
+  padding: 15px;
+  border-left: 2px solid gray;
+  border-right: 2px solid gray;
+}
+
+.top_left_cont h2 {
+  font-size: 40px;
+  color: lightblue;
+  line-height: 60px;
+  margin: 0 0 26px 0;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+.top_left_cont h2 strong {
+  font-weight: 700;
+
+  color: black;
+}
+
+.mrgTop30 {
+  margin-top: 60px;
+}
+
+.inner_section {
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.aboutUs-container {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  background-position-y: 70px;
+}
+#about-us,
+h2,
+h3,
+h6,
+p {
+  color: #6c6c6c;
+}
+
+.about-us {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.about-us h3 {
+  font-size: 28px;
+}
+.points {
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding-left: 0px;
+}
+.about-us p {
+  /*font-size: 0.9375em;*/
+  line-height: 1.625em;
+  padding: 15px 0;
+}
+.about-us .about-us-list {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+
+.about-us .points {
+  position: relative;
+  list-style-type: none;
+  padding: 5px 0 5px 30px;
+}
+
+.about-us .points:before {
+  content: "\f058";
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 1.125em;
+  color: lightgray;
+  left: 0px;
+  top: 3px;
+}
+
+.footer_wrapper {
+  background: lightgray;
+}
+
+.footer_bottom {
+  border-top: 1px solid black;
+  padding: 25px 0;
+}
+
+.footer_bottom span {
+  display: block;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .aboutUs-container {
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto 59%;
+    background-position-y: 150px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 60px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4,
+.mySlides5,
+.mySlides6,
+.mySlides7,
+.mySlides8 {
+  display: none;
+}
